@@ -6,6 +6,28 @@ return {
     opts = require "configs.conform",
   },
 
+  -- ==========================================================
+  -- MASON: Auto-instalación de LSPs, Linters y Formatters
+  -- ==========================================================
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "bash-language-server",
+        "black",
+        "css-lsp",
+        "html-lsp",
+        "htmlhint",
+        "prettier",
+        "pylint",
+        "pyright",
+        "shellcheck",
+        "shfmt",
+        "stylelint",
+      },
+    },
+  },
+  
   -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
