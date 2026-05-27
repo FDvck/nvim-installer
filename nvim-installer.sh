@@ -24,7 +24,7 @@ echo -e "Package: neovim\nPin: release *\nPin-Priority: -1" | sudo tee /etc/apt/
 # Create a symlink for fd-find if it doesn't exist (required by Telescope)
 if [ -x "$(command -v fdfind)" ]; then
   mkdir -p ~/.local/bin
-  ln -sf $(which fdfind) ~/.local/bin/fd
+  ln -sf "$(which fdfind)" ~/.local/bin/fd
   export PATH="$HOME/.local/bin:$PATH"
 fi
 
