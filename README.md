@@ -16,7 +16,7 @@ Clone this repository and execute the installer script. You will be prompted for
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/fduck/nvim-installer.git
+git clone https://github.com/FDvck/nvim-installer.git
 cd nvim-installer
 
 # 2. Make the script executable
