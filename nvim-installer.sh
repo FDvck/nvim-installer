@@ -15,7 +15,7 @@ echo -e "\n[+] Starting Neovim and NvChad setup/update process...\n"
 # 1. Install required dependencies
 echo "=> Installing dependencies via apt..."
 sudo apt update
-sudo apt install -y curl git build-essential ripgrep unzip fd-find
+sudo apt install -y curl git build-essential ripgrep unzip fd-find nodejs npm python3-pip python3-venv
 
 # Block 'neovim' from being installed via apt to prevent conflicts with our manual install
 echo "=> Locking apt to prevent official neovim package installation..."
